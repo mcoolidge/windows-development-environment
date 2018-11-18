@@ -92,7 +92,7 @@ choco install docker-for-windows --yes
 Update-Environment-Path
 
 # WSL
-choco install -y Microsoft-Windows-Subsystem-Linux --source="'windowsfeatures'"
+choco install -y wsl
 
 
 # Bower
