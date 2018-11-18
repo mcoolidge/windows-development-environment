@@ -76,11 +76,6 @@ Update-Environment-Path
 npm install --global --production npm-windows-upgrade
 npm-windows-upgrade --npm-version latest
 npm install -g gulp-cli 
-# npm install -g yo
-# npm install -g mocha
-# npm install -g install-peerdeps
-# npm install -g typescript
-# npm install prettier-eslint --save-dev
 
 #
 # Docker
@@ -96,13 +91,9 @@ choco install docker-for-windows --yes
 
 Update-Environment-Path
 
-# docker pull worpress
-# docker pull mysql
-# docker pull phpmyadmin
+# WSL
+choco install -y Microsoft-Windows-Subsystem-Linux --source="'windowsfeatures'"
 
-
-# Yarn
-# ?? choco install yarn --yes
 
 # Bower
 npm install -g bower
@@ -112,10 +103,6 @@ npm install -g grunt-cli
 
 # ESLint
 npm install -g eslint
-# npm install -g babel-eslint
-# npm install -g eslint-plugin-react
-# npm install -g install-peerdeps
-# install-peerdeps --dev eslint-config-airbnb
 
 #
 # VS Code
@@ -132,13 +119,6 @@ code --install-extension ms-vscode.PowerShell
 # CSharp support
 code --install-extension ms-vscode.csharp
 
-# PHP support
-# code --install-extension felixfbecker.php-debug
-# code --install-extension HvyIndustries.crane
-
-# Ruby support
-# code --install-extension rebornix.Ruby
-
 # HTML, CSS, JavaScript support
 code --install-extension Zignd.html-css-class-completion
 code --install-extension lonefy.vscode-JS-CSS-HTML-formatter
@@ -154,15 +134,6 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension eg2.vscode-npm-script
 code --install-extension christian-kohler.npm-intellisense
 
-# Mocha support
-# code --install-extension spoonscen.es6-mocha-snippets
-# code --install-extension maty.vscode-mocha-sidebar
-
-# React Native support
-# code --install-extension vsmobile.vscode-react-native
-# npm install -g create-react-native-app
-# npm install -g react-native-cli
-
 # Docker support
 code --install-extension PeterJausovec.vscode-docker
 
@@ -170,25 +141,10 @@ code --install-extension PeterJausovec.vscode-docker
 code --install-extension jebbs.plantuml
 
 #
-# MySQL
-#
-
-# choco install mysql --yes
-# choco install mysql.workbench --yes
-
-
-#
 # Android Studio
 # 
 
 choco install androidstudio --yes
-
-#
-# Static Site Generators
-#
-
-# Hugo
-# choco install hugo --yes
 
 #
 # Basic Utilities
