@@ -153,12 +153,18 @@ choco install androidstudio --yes
 choco install slack --yes
 choco install notepadplusplus --yes
 choco install rapidee --yes
+choco install -y keepass
+choco install -y paint.net
+
 
 # File Management
 choco install beyondcompare --yes
 choco install 7zip --yes
 choco install filezilla --yes
 choco install dropbox --yes
+choco install qbittorrent --yes
+choco install windirstat --yes
+choco install everything --yes
 
 # Media Viewers
 choco install irfanview --yes
