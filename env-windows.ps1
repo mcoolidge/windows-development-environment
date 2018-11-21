@@ -77,7 +77,8 @@ choco install docker-for-windows --yes
 Update-Environment-Path
 
 # WSL
-choco install -y wsl
+choco install wsl --yes
+choco install wsl-ubuntu-1804 --yes
 
 # Grunt
 npm install -g grunt-cli
