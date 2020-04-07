@@ -42,17 +42,11 @@ git config --global alias.everything "! git pull && git submodule update --init 
 git config --global alias.aliases "config --get-regexp alias"
 
 #
-# Caddy HTTP Server
-#
-
-choco install caddy --yes
-Update-Environment-Path
-
-#
 # Languages
 #
 choco install python2 --yes
 choco install jdk8 --yes
+choco install dotnetcore-sdk --yes
 Update-Environment-Path
 
 # Node
@@ -133,16 +127,12 @@ choco install paint.net  --yes
 
 
 # File Management
-choco install beyondcompare --yes
 choco install 7zip --yes
-choco install filezilla --yes
 choco install dropbox --yes
 choco install qbittorrent --yes
 choco install windirstat --yes
-choco install everything --yes
 
 # Media Viewers
-choco install irfanview --yes
 choco install vlc --yes
 
 # Browsers
