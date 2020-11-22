@@ -1,12 +1,3 @@
-#-------------------------------------------------------------------------------#
-#                                                                               #
-# This script installs all the stuff I need to develop the things I develop.    #
-# Run PowerShell with admin priveleges, type `env-windows`, and go make coffee. #
-#                                                                               #
-#                                                                        -James #
-#                                                                               #
-#-------------------------------------------------------------------------------#
-
 #
 # Functions
 #
@@ -42,6 +33,12 @@ git config --global alias.everything "! git pull && git submodule update --init 
 git config --global alias.aliases "config --get-regexp alias"
 
 #
+# AWS awscli
+#
+choco install awscli --yes
+Update-Environment-Path
+
+#
 # Languages
 #
 choco install python2 --yes
@@ -52,9 +49,6 @@ Update-Environment-Path
 # Node
 choco install nodejs.install --yes
 Update-Environment-Path
-npm install --global --production npm-windows-upgrade
-npm-windows-upgrade --npm-version latest
-npm install -g gulp-cli 
 
 #
 # Docker
@@ -64,7 +58,6 @@ npm install -g gulp-cli
 Enable-WindowsOptionalFeature -Online -FeatureName:Microsoft-Hyper-V -All -NoRestart
 
 choco install docker --yes
-choco install docker-machine --yes
 choco install docker-compose --yes
 choco install docker-for-windows --yes
 
@@ -72,7 +65,8 @@ Update-Environment-Path
 
 # WSL
 choco install wsl --yes
-choco install wsl-ubuntu-1804 --yes
+choco install wsl-ubuntu-2004 --yes
+choco install ubuntuhere --yes
 
 # Grunt
 npm install -g grunt-cli
@@ -83,7 +77,6 @@ npm install -g eslint
 #
 # VS Code
 #
-
 choco install visualstudiocode --yes # includes dotnet
 Update-Environment-Path
 code --install-extension robertohuertasm.vscode-icons
@@ -100,7 +93,6 @@ code --install-extension Zignd.html-css-class-completion
 code --install-extension lonefy.vscode-JS-CSS-HTML-formatter
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension RobinMalfait.prettier-eslint-vscode
-code --install-extension flowtype.flow-for-vscode
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 
@@ -129,7 +121,6 @@ choco install paint.net  --yes
 # File Management
 choco install 7zip --yes
 choco install dropbox --yes
-choco install qbittorrent --yes
 choco install windirstat --yes
 
 # Media Viewers
@@ -142,7 +133,7 @@ choco install firefox --yes
 # Misc
 choco install sysinternals --yes
 choco install procexp --yes
-# choco install firacode --yes # See https://www.youtube.com/watch?v=KI6m_B1f8jc
+choco install virtualbox --yes
 
 Update-Environment-Path
 
